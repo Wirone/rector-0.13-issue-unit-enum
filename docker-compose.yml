@@ -1,0 +1,6 @@
+services:
+  php:
+    build: .
+    volumes:
+      - .:/var/www/html
+      - ${COMPOSER_HOME:-~/.config/composer}:/.composer
